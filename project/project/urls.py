@@ -20,5 +20,7 @@ from . import views
 urlpatterns = [
     path('', views.hello),
     path('admin/', admin.site.urls),
-    path('horoscope/', include('horoscope.urls'))
+    path('horoscope/', include('horoscope.urls')),
+    path('SkillFactory/', include('SkillFactory.urls'))
+    # path('SkillFactory/', include('django.contrib.flatpages.urls'))
 ]
